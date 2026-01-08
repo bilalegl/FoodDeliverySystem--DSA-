@@ -1,0 +1,42 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "FoodDeliveryGUI",
+            "request": "launch",
+            "mainClass": "app.FoodDeliveryGUI",
+            "projectName": "FoodDeliverySystem_721342a1"
+        },
+        {
+            "type": "java",
+            "name": "Launcher",
+            "request": "launch",
+            "mainClass": "app.Launcher",
+            "projectName": "FoodDeliverySystem_721342a1"
+        },
+        {
+            "type": "java",
+            "name": "FoodDeliveryCLI",
+            "request": "launch",
+            "mainClass": "app.FoodDeliveryCLI",
+            "projectName": "FoodDeliverySystem_721342a1"
+        },
+        {
+            "type": "java",
+            "name": "Run CLI",
+            "request": "launch",
+            "mainClass": "app.FoodDeliveryCLI",
+            "projectName": "FoodDeliverySystem"
+        },
+        {
+            "type": "java",
+            "name": "Run GUI",
+            "request": "launch",
+            "mainClass": "app.Launcher",
+            "projectName": "FoodDeliverySystem",
+            "vmArgs": "--module-path C:/javafx-sdk-21.0.7/lib --add-modules javafx.controls,javafx.fxml",
+            "isDefault": true
+        }
+    ]
+}

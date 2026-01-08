@@ -1,0 +1,65 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compile All",
+            "type": "shell",
+            "command": "javac",
+            "args": [
+                "--module-path", "C:/javafx-sdk-21.0.7/lib",
+                "--add-modules", "javafx.controls,javafx.fxml",
+                "-d", "bin",
+                "$(Get-ChildItem -Recurse -Filter *.java | ForEach-Object {$_.FullName})"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": "$javac"
+        },
+        {
+            "label": "Run GUI",
+            "type": "shell",
+            "command": "java",
+            "args": [
+                "--module-path", "C:/javafx-sdk-21.0.7/lib",
+                "--add-modules", "javafx.controls,javafx.fxml",
+                "-cp", "bin",
+                "app.Launcher"
+            ],
+            "group": {
+                "kind": "test",
+                "isDefault": false
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Run CLI",
+            "type": "shell",
+            "command": "java",
+            "args": [
+                "-cp", "bin",
+                "app.FoodDeliveryCLI"
+            ],
+            "group": {
+                "kind": "test",
+                "isDefault": false
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Compile & Run GUI",
+            "type": "shell",
+            "command": "powershell",
+            "args": [
+                "-Command",
+                "javac --module-path C:/javafx-sdk-21.0.7/lib --add-modules javafx.controls,javafx.fxml -d bin $(Get-ChildItem -Recurse -Filter *.java | ForEach-Object {$_.FullName}); java --module-path C:/javafx-sdk-21.0.7/lib --add-modules javafx.controls,javafx.fxml -cp bin app.Launcher"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "problemMatcher": []
+        }
+    ]
+}

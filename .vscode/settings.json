@@ -1,0 +1,11 @@
+{
+    "java.project.referencedLibraries": [
+        "C:/javafx-sdk-21.0.7/lib/javafx.base.jar",
+        "C:/javafx-sdk-21.0.7/lib/javafx.controls.jar",
+        "C:/javafx-sdk-21.0.7/lib/javafx.fxml.jar",
+        "C:/javafx-sdk-21.0.7/lib/javafx.graphics.jar",
+        "c:\\Users\\bilal\\Downloads\\gson-2.13.1.jar"
+    ],
+    "java.compile.nullAnalysis.mode": "automatic",
+    "java.debug.settings.hotCodeReplace": "auto"
+}
